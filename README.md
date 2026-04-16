@@ -1,54 +1,33 @@
-# Mini Kanban Board
+# 📋 Mini Kanban Board
 
-A modern, responsive, Trello-like Kanban board built with Next.js 14 and Tailwind CSS. This is an intern assignment project featuring full CRUD capabilities, drag-and-drop mechanics, and persistent state management.
+Welcome to my Mini Kanban Board! This is a simple, Trello-like task management board created for an intern assignment.
 
-## 🌟 Features
+**Disclaimer:** I built this project with the assistance of AI to help structure the code and design the interface beautifully! 🤖✨
 
-- **Create, Read, Update, Delete (CRUD)**: Fully manage tasks through intuitive modals.
-- **Drag & Drop**: Seamlessly move tasks between "Pending", "In Progress", and "Completed" columns.
-- **Search & Filter**: Real-time filtering of tasks by title or description.
-- **Optimistic UI**: Instant state updates for a snappy user experience.
-- **Data Persistence**: Uses `localStorage` so your tasks survive page reloads.
-- **Responsive Design**: Carefully crafted for both desktop and mobile views.
-- **Premium UI**: Features glassmorphism, micro-animations, and clean typography using Tailwind CSS.
+## 🌟 What does this app do?
+- **Create Tasks:** Click the "Add Task" button to create new cards. They automatically appear in the "Pending" column.
+- **Move Tasks:** You can either drag and drop tasks across the columns, or simply click the "Move ➜" button on the card!
+- **Edit & Delete:** Update your task details or delete them if you don't need them anymore.
+- **Data Saved:** Everything is saved directly in your browser (`localStorage`). So if you refresh the page, your tasks will still be there!
 
-## 🛠️ Tech Stack
+## 💻 Tech Stack Used
+- **Next.js** (App Router)
+- **React.js** (Functional Components)
+- **Tailwind CSS** (For styling)
+- **TypeScript**
 
-- **Framework**: Next.js (App Router)
-- **Library**: React (Functional Components, Hooks, Context)
-- **Styling**: Tailwind CSS
-- **Language**: TypeScript
-- **Drag & Drop**: `@hello-pangea/dnd`
-- **Icons**: `lucide-react`
+## 🚀 How to Run this Locally
 
-## 🚀 Getting Started
+1. First, clone this repository to your computer.
+2. Open the folder in your terminal and install the required packages by running:
+   ```bash
+   npm install
+   ```
+3. Start the application by running:
+   ```bash
+   npm run dev
+   ```
+4. Open your browser and go to `http://localhost:3000` to see it working!
 
-### 1. Clone the repository
-\`\`\`bash
-git clone <repository-url>
-cd kanban
-\`\`\`
-
-### 2. Install dependencies
-\`\`\`bash
-npm install
-\`\`\`
-
-### 3. Run the development server
-\`\`\`bash
-npm run dev
-\`\`\`
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## 🏗️ Architecture
-
-- **Server vs Client Components**: 
-  - Structural elements (Layout, Page Skeleton) are rendered globally, providing robust SEO.
-  - The Kanban core (`Header`, `KanbanBoard`, `TaskCard`, Modals) are marked with `"use client"` since they are highly interactive and rely on browser APIs.
-- **State Management**: Uses React Context (`TaskProvider`) to centralize functions and state, keeping the component tree clean and avoiding props drilling.
-- **Persistence Layer**: Custom `useEffect` hooks sync the `TaskContext` directly with the browser's `localStorage` on every change.
-
-## 📝 License
-
-MIT
+## 🌐 Deployed Link
+*[You can add your Vercel or Netlify live deployment link here]*
