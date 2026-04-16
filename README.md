@@ -30,4 +30,4 @@ Welcome to my Mini Kanban Board! This is a simple, Trello-like task management b
 4. Open your browser and go to `http://localhost:3000` to see it working!
 
 ## 🌐 Deployed Link
-*[You can add your Vercel or Netlify live deployment link here]*
+  https://kanban-board-one-sooty.vercel.app/
