@@ -15,10 +15,10 @@ interface ColumnProps {
 
 export function Column({ column, tasks, onEditTask, onDeleteTask, onMoveTask }: ColumnProps) {
   return (
-    <div className="flex flex-col bg-[#eef1f6] rounded flex-shrink-0 border border-slate-200 w-80 min-w-[320px] h-fit max-h-full">
+    <div className="flex flex-col bg-[#eef1f6] rounded flex-shrink-0 border border-slate-200 w-full md:w-[85%] lg:w-80 min-w-[280px] lg:min-w-[320px] max-w-[500px] h-fit max-h-full">
       {/* Column Header */}
-      <div className="p-4 bg-white rounded-t border-b border-slate-200 flex items-center justify-center">
-        <h3 className="font-bold text-slate-700 text-lg">
+      <div className="p-3 sm:p-4 bg-white rounded-t border-b border-slate-200 flex items-center justify-center">
+        <h3 className="font-bold text-slate-700 text-base sm:text-lg">
           {column.title}
         </h3>
       </div>

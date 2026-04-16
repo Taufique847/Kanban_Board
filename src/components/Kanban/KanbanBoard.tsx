@@ -50,9 +50,9 @@ export function KanbanBoard({ onEditTask, onDeleteTask }: KanbanBoardProps) {
   );
 
   return (
-    <div className="flex-1 overflow-x-auto p-6 flex justify-center">
+    <div className="flex-1 overflow-x-hidden overflow-y-auto p-4 md:p-6 flex justify-center">
       <DragDropContext onDragEnd={handleDragEnd}>
-        <div className="flex gap-6 h-full items-start justify-center w-full max-w-[1050px]">
+        <div className="flex flex-col lg:flex-row gap-6 h-full items-center lg:items-start lg:justify-center w-full max-w-[1050px]">
           {COLUMNS.map((col) => {
             const columnTasks = filteredTasks.filter((task) => task.status === col.id);
             return (
