@@ -2,7 +2,7 @@
 
 Welcome to my Mini Kanban Board! This is a simple, Trello-like task management board created for an intern assignment.
 
-**Disclaimer:** I built this project with the assistance of AI to help structure the code and design the interface beautifully! 🤖✨
+
 
 ## 🌟 What does this app do?
 - **Create Tasks:** Click the "Add Task" button to create new cards. They automatically appear in the "Pending" column.
